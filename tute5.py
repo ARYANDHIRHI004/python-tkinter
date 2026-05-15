@@ -9,7 +9,7 @@ password = StringVar()
 
 def handelSubmit():
     if(len(username.get())==0 or len(password.get())==0):
-        tmsg.showwarning("warning", "Finds are empty..!")
+        tmsg.showwarning("warning", "Fields are empty..!")
         return 
     with open("db.txt", 'a') as f:
         f.write(f"Username is {username.get()}, password is {password.get()}\n")
